@@ -1,62 +1,65 @@
 # Object-Detection-using-opencv-and-ardiuno
-# Savunma Sanayi için Yapay Zeka ve Servo Kontrol Projesi
+# AI and Servo Control Project for Defense Industry
 
-Bu repo, savunma sanayi uygulamaları için geliştirilmiş iki temel projeyi içermektedir: 
-1. **Nesne Tespiti ve Takibi** (object_detection.py)
-2. **Servo Motor Kontrolü** (servo2.ino)
+This repository contains two main projects developed for defense industry applications:
+1. **Object Detection and Tracking** (`object_detection.py`)
+2. **Servo Motor Control** (`servo2.ino`)
 
 ---
 
-## 🎯 Proje 1: Nesne Tespiti ve Takibi
+## 🎯 Project 1: Object Detection and Tracking
 
-### 📄 **Açıklama:**
-Bu proje, OpenCV kullanarak kameradan alınan görüntüde kırmızı renkli nesneleri tespit eder ve merkez koordinatlarını belirler. Belirlenen koordinatlar, Arduino'ya gönderilerek servo motor kontrolü sağlanır.
+### 📄 **Description:**
+This project uses OpenCV to detect red-colored objects in the camera frame and determine their center coordinates. The identified coordinates are sent to an Arduino to control the servo motor accordingly.
 
-### 🚀 **Kullanılan Teknolojiler:**
+### 🚀 **Technologies Used:**
 - **Python**
 - **OpenCV**
-- **Arduino** (Serial haberleşme)
-- **Kamera** (Webcam kullanımı)
+- **Arduino** (Serial communication)
+- **Camera** (Webcam usage)
 
-### 📂 **Dosya:**
-- `object_detection.py`: Görüntü işleme ve seri haberleşme kodunu içerir.
+### 📂 **File:**
+- `object_detection.py`: Contains image processing and serial communication code.
 
-### ⚙️ **Kurulum ve Kullanım:**
-1. Gerekli kütüphaneleri yükleyin:
+### ⚙️ **Installation and Usage:**
+1. Install the required libraries:
 ```bash
 pip install opencv-python pyserial numpy
 ```
-2. Arduino'yu `COM4` portuna bağlayın ve servo motorun bağlantılarını yapın.
-3. `object_detection.py` dosyasını çalıştırın:
+2. Connect the Arduino to `COM4` port and set up the servo motor connections.
+3. Run the `object_detection.py` file:
 ```bash
 python object_detection.py
 ```
-4. Kırmızı renkli nesneyi kameraya gösterin ve servo motorun hareketini gözlemleyin.
+4. Show a red-colored object to the camera and observe the servo motor movement.
 
 ---
 
-## 🔧 Proje 2: Servo Motor Kontrolü
+## 🔧 Project 2: Servo Motor Control
 
-### 📄 **Açıklama:**
-Bu proje, Arduino üzerinde servo motorun belirli koordinatlara göre hareket etmesini sağlar. Görüntü işleme projesi ile entegre çalışarak, nesne tespit edildiğinde servo motor pozisyonunu otomatik olarak ayarlar.
+### 📄 **Description:**
+This project allows the servo motor on Arduino to move according to specific coordinates. It works in integration with the image processing project, automatically adjusting the servo motor position when an object is detected.
 
-### 🚀 **Kullanılan Teknolojiler:**
+### 🚀 **Technologies Used:**
 - **Arduino IDE**
-- **Servo Kütüphanesi**
-- **Serial Haberleşme**
+- **Servo Library**
+- **Serial Communication**
 
-### 📂 **Dosya:**
-- `servo2.ino`: Arduino tarafında servo motor kontrolünü sağlayan kodu içerir.
+### 📂 **File:**
+- `servo2.ino`: Contains the Arduino code for controlling the servo motor.
 
-### ⚙️ **Kurulum ve Kullanım:**
-1. Arduino IDE'yi açın ve `servo2.ino` dosyasını yükleyin.
-2. Arduino'nun `COM4` portuna bağlı olduğundan emin olun.
-3. Servo motorun doğru bağlantılarını kontrol edin (PWM pinine bağlayın).
+### ⚙️ **Installation and Usage:**
+1. Open Arduino IDE and upload the `servo2.ino` file.
+2. Ensure the Arduino is connected to the `COM4` port.
+3. Check the correct connections of the servo motor (connect to PWM pin).
 
 ---
 
-## 📧 İletişim
-- **Geliştirici:** Yakup Erkan Kaymaz
-- **E-posta:** kaymazyakuperkan@gmail.com
+## 📧 Contact
+- **Developer:** Yakup Erkan Kaymaz
+- **Email:** kaymazyakuperkan@gmail.com
 
-Eğer bu projeyi kullanırken bir sorunla karşılaşırsanız veya katkı sağlamak isterseniz, benimle iletişime geçmekten çekinmeyin!
+If you encounter any issues while using this project or would like to contribute, feel free to contact me!
+
+
+
